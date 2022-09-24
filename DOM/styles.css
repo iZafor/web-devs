@@ -1,0 +1,14 @@
+.huge {
+  color: red;
+  font-size: 10rem;
+  font-weight: bold;
+}
+
+.invisible {
+  display: none;
+}
+
+.links {
+    color: red;
+    text-decoration: none;
+}
