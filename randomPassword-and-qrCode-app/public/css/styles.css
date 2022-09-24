@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #000;
+}
+
+.main-div {
+  padding: 10% 40%;
+}
+
+.password-text, .extracted-text {
+  color: #fff;
+  outline: 1px solid #fff;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.password-text:hover, .extracted-text:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.heading {
+  color: #fff;
+  font-weight: 900;
+}
+
+input[type="file"]{
+  color: #fff;
+  background-color: #000;
+}
+
+@media (max-width: 501px) {
+  .main-div {
+    padding: 45% 24%;
+  }
+  video {
+    display: none;
+  }
+}

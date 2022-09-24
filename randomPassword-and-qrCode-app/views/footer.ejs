@@ -1,0 +1,23 @@
+</div>
+</div>
+<script>
+  const btn = document.querySelector(".save");
+  const link = document.querySelector(".imgLink");
+  const fileName = document.querySelector(".file-name");
+  let newFileName = "";
+  if (btn) {
+    btn.addEventListener("click", () => {
+      if (!fileName.value.trim()) {
+        newFileName = `qr-code-${Date.now()}`;
+      } else {
+        newFileName = fileName.value;
+      }
+      newFileName += ".png";
+      console.log(newFileName);
+      link.setAttribute("download", newFileName);
+      link.click();
+    });
+  }
+</script>
+</body>
+</html>
